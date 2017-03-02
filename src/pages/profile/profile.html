@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-navbar class="ion-navbar" color="dark" hideBackButton="true">
+    <ion-buttons left>
+      <button ion-button color="button" icon-only (tap)="back()">
+        <ion-icon name="arrow-back"></ion-icon>
+      </button>
+    </ion-buttons>
+
+    <ion-title>
+      Settings
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+  <button ion-button block outline class="profile-button" (tap)="logout()">Logout</button>
+
+</ion-content>

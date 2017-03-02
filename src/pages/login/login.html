@@ -1,0 +1,65 @@
+<ion-content class="login-page">
+  <img class="login-img" src="assets/circleLogo.png">
+
+  <form class="login-input" (submit)="loginWithEmail()" [formGroup]="loginForm" novalidate>
+    <ion-item>
+
+      <ion-input #email formControlName="email"
+                 type="email"
+                 (change)="elementChanged(email)"
+                 placeholder="Your email address"
+                 value=""
+                 [class.invalid]="!loginForm.controls.email.valid && (emailChanged || submitAttempt)">
+      </ion-input>
+
+    </ion-item>
+
+    <ion-item class="error-message" *ngIf="!loginForm.controls.email.valid  && (emailChanged || submitAttempt)">
+      <p>Please enter a valid email.</p>
+    </ion-item>
+
+    <ion-item>
+
+      <ion-input #password formControlName="password"
+                 type="password"
+                 (change)="elementChanged(password)"
+                 placeholder="Your password"
+                 value=""
+                 [class.invalid]="!loginForm.controls.password.valid && (passwordChanged || submitAttempt)">
+      </ion-input>
+    </ion-item>
+
+    <ion-item class="error-message" *ngIf="!loginForm.controls.password.valid  && (passwordChanged || submitAttempt)">
+      <p>Your password needs more than 6 characters.</p>
+    </ion-item>
+
+    <button ion-button class="primary-color" block type="submit">
+      Sign in
+    </button>
+  </form>
+
+  <ion-row class="bottom-row">
+    <ion-col class="login-button">
+
+      <button class="login-input" ion-button block outline color="light" (tap)="facebookLogin()">
+        <img class="icon-image" src="assets/facebook.png">
+        Sign in w/ Facebook
+      </button>
+
+      <button class="login-input" ion-button block outline color="light" (tap)="twitterLogin()">
+        <img class="icon-image" src="assets/twitter.png">
+        Sign in with Twitter
+      </button>
+    </ion-col>
+  </ion-row>
+
+  <ion-col class="bottom-signin">
+    <div class="background" small (tap)="goToResetPassword()">
+      Forgot password?
+    </div>
+
+    <div class="background" small (tap)="goToSignup()">
+      New here? Sign Up
+    </div>
+  </ion-col>
+</ion-content>

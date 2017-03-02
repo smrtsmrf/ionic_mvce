@@ -1,0 +1,1 @@
+{"app_id":"72faf193","api_key":"5c134602ffb1a25c3b22ea9c2eb9e1937586d112b71a6158","watchPatterns":["www/build/*","!plugins","!platforms","!node_modules","!bower_components","!hooks","!typings","!resources"]}

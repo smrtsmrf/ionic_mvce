@@ -1,0 +1,38 @@
+.login-page {
+  max-height:100%;
+  background-color: $background;
+  .scroll-content {
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .login-img {
+    max-width: 30%;
+    margin-top: 20%;
+    margin-bottom: 15%;
+  }
+  .login-input{
+    max-width: 75%;
+    flex: 2;
+    margin-bottom: 2%;
+  }
+  .primary-color{
+    background-color: $primary;
+  }
+  .rounded{
+    border-radius: 15px;
+  }
+  .bottom-row{
+    max-width: 100%;
+    margin-left: 22.5%;
+  }
+  .icon-image{
+    height:3rem;
+    margin-right: 2%;
+  }
+  .bottom-signin{
+    margin-top: 7%;
+    display: flex;
+    justify-content: space-around;
+  }
+}

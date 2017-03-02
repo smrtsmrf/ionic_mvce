@@ -1,0 +1,21 @@
+{
+  "name": "ionic-hello-world",
+  "description": "VutilitiProject: An Ionic project",
+  "main": "",
+  "authors": [
+    "Ionic Framework"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/vutility/ionic_mobile",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-nvd3": "^1.0.9",
+    "d3": "^4.4.0"
+  }
+}
